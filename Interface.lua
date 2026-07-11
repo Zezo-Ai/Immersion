@@ -3,7 +3,7 @@ local API = {}; ImmersionAPI = API;
 local IS_RETAIL  = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE or nil;
 local IS_WOW10   = (function() -- WoW10 == modern API
 	local version = select(4, GetBuildInfo())
-	if version >= 30401 or ( version >= 11404 and version <= 20505 ) then
+	if version >= 30401 or ( version >= 11404 and version <= 20506 ) then
 		return true
 	end
 end)();
